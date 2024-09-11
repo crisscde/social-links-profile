@@ -43,11 +43,68 @@
   font: inherit;
   font-family: Inter, Arial, Helvetica, sans-serif;
   color: var(--white);
+  font-size: 11px;
 }
 
 body {
   background-color: var(--grey-900);
   min-height: 100vh;
-  display: grid;
-  place-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: clamp(300px, 25vw, 280px);
+  height: auto;
+  background-color: var(--grey-800);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.card__image {
+  width: 70px;
+  border-radius: 50%;
+  margin-block-end: 22px;
+}
+
+.card__name {
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.card__paragraph {
+  font-weight: 700;
+  color: var(--green);
+  padding-block-start: 8px;
+}
+
+.card__phrase {
+  padding-block: 23px 20px;
+}
+
+.card__links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+button {
+  width: 100%;
+  background-color: var(--grey-700);
+  border: none;
+  font-weight: 600;
+  padding-block: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+button:hover {
+  color: var(--grey-700);
+  background-color: var(--green);
 }
