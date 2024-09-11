@@ -43,7 +43,7 @@
   font: inherit;
   font-family: Inter, Arial, Helvetica, sans-serif;
   color: var(--white);
-  font-size: 11px;
+  font-size: 14px;
 }
 
 body {
@@ -55,7 +55,9 @@ body {
 }
 
 .card {
-  width: clamp(300px, 25vw, 280px);
+  max-width: 385px;
+  width: 90vw;
+  min-width: 200px;
   height: auto;
   background-color: var(--grey-800);
   padding: 30px;
@@ -73,7 +75,7 @@ body {
 
 .card__name {
   font-weight: 600;
-  font-size: 19px;
+  font-size: 24px;
 }
 
 .card__paragraph {
