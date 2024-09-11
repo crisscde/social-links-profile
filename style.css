@@ -98,7 +98,7 @@ button {
   background-color: var(--grey-700);
   border: none;
   font-weight: 600;
-  padding-block: 12px;
+  padding-block: 15px;
   border-radius: 10px;
   cursor: pointer;
   transition: .3s ease-in-out;
